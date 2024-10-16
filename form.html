@@ -1,0 +1,105 @@
+<form action="http://mms-it.com">
+  <fieldset>
+    <legend>Fill your information</legend>
+    <table>
+      <tr>
+        <td><label for="your_name">Your Name</label></td>
+        <td><input required type="text" name="name" id="your_name" /></td>
+      </tr>
+      <tr>
+        <td><label for="your_email">Email</label></td>
+        <td><input required type="email" name="email" id="your_email" /></td>
+      </tr>
+      <tr>
+        <td><label for="pass">Password </label></td>
+        <td><input required type="password" name="password" id="pass" /></td>
+      </tr>
+      <tr>
+        <td><label for="yrsalary">Salary</label></td>
+        <td><input required type="number" name="salary" id="yrsalary" /></td>
+      </tr>
+      <tr>
+        <td><label>Gender</label></td>
+
+        <td>
+          <input required type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+
+          <input
+            required
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+          />
+          <label for="female">Female</label>
+
+          <input required type="radio" name="gender" id="other" value="other" />
+          <label for="other">Other</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Skill</label></td>
+        <td>
+          <input required type="checkbox" name="skill" id="html" value="html" />
+          <label for="html">html</label>
+
+          <input required type="checkbox" name="skill" id="css" value="css" />
+          <label for="css">css</label>
+
+          <input required type="checkbox" name="skill" id="js" value="js" />
+          <label for="js">js</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="Nationality">Nationality</label>
+        </td>
+        <td>
+          <select name="Nationality" id="Nationality">
+            <option value="" selected>Select nation</option>
+            <option value="mm">Myanmar</option>
+            <option value="ch">Chinese</option>
+            <option value="kr">Korean</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="address">Address</label></td>
+        <td>
+          <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </td>
+      </tr>
+      <hr />
+    </table>
+    <button>Register Now</button>
+  </fieldset>
+</form>
+<!--
+  Input 
+    -Text
+    -Number
+    -Email
+    -Phone
+    -Radio
+    -Checkbox
+  Select/option
+  Text area
+  Button
+ 
+action= ""            -> where to go
+name=" "              -> to  carry data
+for = "" and id = ""  -> to connect label and input
+required              -> don't allow to register without filling the form
+autofocus             -> cursor
+
+Radio
+-----
+name (same name) -> to choose only one
+value -> to carry value
+
+checkbox
+-------
+name(same name)  -> to collect data together
+value -> to carry data
+ -->
